@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url("img/springwall.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+/* Title part */
+.title img{
+    margin-top: -50px;
+    width: 200px;
+}
+
+/* Forecast portion */
+.forecast{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 100vh; */
+    left: 0;
+    text-align: center;
+    padding: 50px;
+}
+.forecast h2{
+    font-size: 180px;
+    font-weight: 400;
+}
+.forecast h2 span{
+    font-size: 80px;
+    font-weight: 500;
+}
+.forecast .box{
+    /* justify-content: center; */
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+}
+.forecast .box img{
+    width: 80px;
+}
+.box p{
+    padding: 0 50px;
+}
+.forecast .box h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+.forecast .box h3{
+    font-size: 70px;
+    font-weight: 400;
+    padding: 0 50px;
+}
+
+
+/* Toggle portion */
+.toggle{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(76, 76, 76, 0.307);
+    width:30vw;
+    padding: 20px 30px;
+    border-left: 2px solid rgba(115, 115, 115, 0.4);
+}
+.toggle .inline{
+    flex-wrap: nowrap;
+    width: fit-content;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.toggle .inline input{
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 20px;
+    border-bottom: 2px solid rgb(212, 212, 212);
+    width: 80%;
+    padding: 5px;
+}
+.toggle .inline input:focus{
+    outline: none;
+}
+.toggle .inline i{
+    background-color: orangered;
+    padding: 15px 15px;
+    /* margin-left: 10px; */
+    margin-top: -3px;
+    cursor: pointer;
+    transition: .2s ease-in-out;
+}
+.toggle .inline i:hover{
+    opacity: .8;
+}
+.toggle .list{
+    display: flex;
+    flex-direction: column;
+    padding: 30px 10px;
+    border-bottom: 2px solid rgb(243, 243, 243);
+    font-size: 18px;
+}
+.toggle .list h4{
+    padding: 10px;
+    font-weight: 400;
+}
+.toggle .list h4:hover{
+    font-weight: 600;
+}
+.toggle .details h2{
+    font-weight: 600;
+    font-size: 35px;
+    padding: 10px;
+}
+.toggle .details .d1{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+.toggle .details .d1 i{
+    margin-right: 10px;
+}
+.toggle .details .d1 h3{
+    margin-left: 40%;
+}
